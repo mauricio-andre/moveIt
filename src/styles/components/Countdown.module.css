@@ -43,6 +43,7 @@
 
   margin-top: 2rem;
 
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -52,6 +53,7 @@
 
   background: var(--blue);
   color: var(--white);
+  overflow: hidden;
 
   font-size: 1.25rem;
   font-weight: 600;
@@ -77,4 +79,20 @@
   background: var(--white);
   color: var(--text);
   cursor: not-allowed;
+}
+
+.countdownButton img {
+  margin-left: 0.5rem;
+}
+
+.countdownProgress {
+  height: 5px;
+  width: 10px;
+  background: var(--green);
+
+  position: absolute;
+  bottom: 0;
+  left: 0;
+
+  transition: width 1s linear;
 }
