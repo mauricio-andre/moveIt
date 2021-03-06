@@ -15,11 +15,15 @@
   background: var(--white);
   width: 100%;
   max-width: 400px;
-  padding: 2rem 3rem;
   border-radius: 5px;
   box-shadow: 0 0 60px rgba(0, 0, 0, 0.85);
-  text-align: center;
   position: relative;
+}
+
+.content {
+  width: 100%;
+  padding: 2rem 3rem;
+  text-align: center;
 }
 
 .container header {
@@ -36,11 +40,48 @@
   margin-top: 0.25rem;
 }
 
-.container button {
+.container button.close {
   position: absolute;
   right: 0.5rem;
   top: 0.5rem;
   background: transparent;
   border: 0;
   font-size: 0px;
+}
+
+.container button.shareTwitter {
+  height: 5rem;
+  width: 100%;
+
+  font-size: 1rem;
+  font-weight: 600;
+
+  background: #F5FCFF;
+  color: var(--blue-twitter);
+
+  border: none;
+  border-top: 1px solid var(--gray-line);
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  transition: 0.2s;
+}
+
+.container button.shareTwitter svg {
+  margin-left: 0.5rem;
+  fill: var(--blue-twitter);
+  transition: fill 0.2s;
+}
+
+.container button.shareTwitter:hover {
+  color: var(--white);
+  background: var(--blue-twitter);
+}
+
+.container button.shareTwitter:hover svg {
+  fill: var(--white);
 }
