@@ -81,7 +81,7 @@
 }
 
 .challengeActive footer button {
-  height: 4rem;
+  height: 5rem;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -94,7 +94,7 @@
   font-size: 1rem;
   font-weight: 600;
 
-  transition: filter .2s;
+  transition: .2s;
 }
 
 .challengeActive footer button + button {
@@ -113,6 +113,13 @@
   border-bottom-right-radius: 5px;
 }
 
-.challengeActive footer button:hover {
-  filter: brightness(0.9);
+
+.challengeActive footer button.challengeFailedButton:hover {
+  background: var(--red);
+  color: var(--white);
+}
+
+.challengeActive footer button.challengeSucceedButton:hover {
+  background: var(--green);
+  color: var(--white);
 }
